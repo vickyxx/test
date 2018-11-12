@@ -22,3 +22,9 @@
 1.pwd    ---- 显示当前工作区
 2.ls -a  ---- 若有.git文件则不能clone
 3.git clone git@github.com:vickyxx/test.git  ---- 将vickyxx/test.git仓库clone到工作区
+4.echo "test" >> test.txt  ---- >>表明追加，相当于新建了文件
+5.cat test.txt  ---- 显示文件内容
+6.git status
+7.git add test.txt
+8.git commit
+9.git push
