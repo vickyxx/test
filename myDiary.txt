@@ -1,0 +1,30 @@
+今天是2018年11月12日，开始学git和github,有些许的激动······
+1.在git bash新建文件夹命令是 mkdir + 文件夹名
+2.新建文件（2种方式）：
+  touch + 文件名 ---> 直接新建文件
+  vi + 文件名  ---> 新建一个文件并进入编辑状态，若文件已存在，则直接进入编辑状态
+3.vi有两种模式：编辑模式  +  命令模式
+  在命令模式下，直接按i就会切入到编辑模式
+  在编辑模式下，按Esc就会切换到命令模式
+  *************************在命令模式下**********************
+  :q   ----   退出编辑，若文本内容被修改过，则会报错
+  :q!  ----   强制退出编辑模式，若内容被修改过则丢弃此次修改
+  :x   ----   退出编辑并保存
+  dd   ----   删除当前行
+  *************************在命令模式下**********************
+@！将本地文件上传到github！
+1.git add + 文件名   ----- 将文件添加到暂存区
+2.git commit -m "描述"   ---- 添加到master分支的目录树里 
+3.git remote add origin git@github.com:vickyxx/test.git ---- 将本地的master和远程master关联
+4.git push -u origin master
+(或者：省略步骤6，直接git push)
+@！从github上clone文件到本地！
+1.pwd    ---- 显示当前工作区
+2.ls -a  ---- 若有.git文件则不能clone
+3.git clone git@github.com:vickyxx/test.git  ---- 将vickyxx/test.git仓库clone到工作区
+4.echo "test" >> test.txt  ---- >>表明追加，相当于新建了文件
+5.cat test.txt  ---- 显示文件内容
+6.git status
+7.git add test.txt
+8.git commit
+9.git push
