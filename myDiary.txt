@@ -28,3 +28,18 @@
 7.git add test.txt
 8.git commit
 9.git push
+
+————————————————分支管理————————————————
+1.可以现在master分支下建一个文件，然后git commit到master分支。
+2.git branch + 分支名   ----> 新建一个分支
+3.git branch   ----> 查看所有分支
+4.git checkout + 分支名   ----> 切换到分支
+5.git branch   ----> 查看分支（*指向当前分支）
+6.//echo "new feature added" >> test.txt   ----> 将new feature added添加到test.txt
+7.git add test.txt
+8.git commit -m "new feature added"
+9.git status
+10.git checkout master   ----> 切回到master分支
+11.git merge + 分支名   ----> 将分支中新的内容合并到master分支
+12.git branch -d + 分支名  ----> 删除分支
+————————————————————————————————————
